@@ -1,10 +1,16 @@
 {
-    "description": "",
+    "description": "Contains a country list and a data source for Neos",
     "type": "neos-package",
     "name": "punktde/countries",
     "require": {
-        "neos/flow": "*"
+        "neos/neos": "*"
     },
+    "keywords": [
+        "Neos",
+        "Countries"
+    ],
+    "homepage": "https://github.com/punktDe/punktde-countries",
+    "license": "MIT",
     "autoload": {
         "psr-4": {
             "PunktDe\\Countries\\": "Classes/"
