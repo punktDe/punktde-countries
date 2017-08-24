@@ -1,0 +1,12 @@
+'PunktDe.Countries:CountryMixin':
+  abstract: true
+  properties:
+    countries:
+      type: string
+      ui:
+        label: 'Countries in this area'
+        inspector:
+          editor: Content/Inspector/Editors/SelectBoxEditor
+          editorOptions:
+            dataSourceIdentifier: punktde-countries-countrydatasource
+            multiple: true
