@@ -23,7 +23,7 @@ class CountryDataSource extends AbstractDataSource
     protected $countries;
 
 
-    public function getData(NodeInterface $node = null, array $arguments)
+    public function getData(NodeInterface $node = null, array $arguments = [])
     {
         $data = [];
 
