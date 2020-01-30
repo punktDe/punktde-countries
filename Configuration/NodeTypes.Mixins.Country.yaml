@@ -2,7 +2,7 @@
   abstract: true
   properties:
     countries:
-      type: string
+      type: array
       ui:
         label: 'Countries in this area'
         inspector:
