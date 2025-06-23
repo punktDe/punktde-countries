@@ -5,7 +5,6 @@
  *  All rights reserved.
  */
 
-
 namespace PunktDe\Countries\DataSources;
 
 use Neos\ContentRepository\Core\Projection\ContentGraph\Node;
@@ -14,16 +13,15 @@ use Neos\Flow\Annotations as Flow;
 
 class CountryDataSource extends AbstractDataSource
 {
-    static protected $identifier ='punktde-countries-countrydatasource';
+    protected static $identifier = 'punktde-countries-countrydatasource';
 
     /**
      * @Flow\InjectConfiguration(path = "countries")
      * @var array
      */
-    protected $countries;
+    protected array $countries;
 
-
-    public function getData(Node $node = null, array $arguments = [])
+    public function getData(Node $node = null, array $arguments = []): array
     {
         $data = [];
 
